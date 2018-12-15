@@ -51,4 +51,15 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  ages = []
+  average = 0
+    data[season].each do |element|
+        ages << element[age]
+      end
+  for age in ages do
+    average += age
+  end
+  average = average / ages.length
+
+  
 end
