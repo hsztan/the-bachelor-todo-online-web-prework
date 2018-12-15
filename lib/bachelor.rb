@@ -57,9 +57,8 @@ def get_average_age_for_season(data, season)
         ages << element["age"]
       end
   for age in ages do
-    average += age.to_i
+    average += age.to_f
   end
-  binding.pry
   average = average / ages.length
 
 
