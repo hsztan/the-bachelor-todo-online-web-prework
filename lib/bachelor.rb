@@ -3,13 +3,12 @@ require "pry"
 
 def get_first_name_of_season_winner(data, season)
   # code here
-  name = ""
+  
   data[season].each do |element|
     if element["status"] == "Winner"
       return element["name"].split.first
     end
   end
-name
 end
 
 
