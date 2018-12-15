@@ -59,7 +59,8 @@ def get_average_age_for_season(data, season)
   for age in ages do
     average += age.to_i
   end
+  binding.pry
   average = average / ages.length
-binding.pry
+
 
 end
