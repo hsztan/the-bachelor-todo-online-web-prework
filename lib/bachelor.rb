@@ -52,7 +52,7 @@ end
 def get_average_age_for_season(data, season)
   # code here
   ages = []
-  average = 0
+  average = 0.0
     data[season].each do |element|
         ages << element["age"]
       end
