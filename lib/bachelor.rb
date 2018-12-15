@@ -5,8 +5,8 @@ def get_first_name_of_season_winner(data, season)
   # code here
   season_k = season.to_sym
   data[season].each do |element|
-    if element[:status] == "Winner"
-      return element[:name].split.first
+    if element["status"] == "Winner"
+      return element["name"].split.first
     end
   end
 
