@@ -54,7 +54,7 @@ def get_average_age_for_season(data, season)
   ages = []
   average = 0
     data[season].each do |element|
-        ages << element[age]
+        ages << element["age"]
       end
   for age in ages do
     average += age
